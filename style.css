@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+    color: black;
+}
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+.navbar .nav li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+.navbar .nav li a{
+    text-decoration: none;
+}
+.navbar .nav select{
+    border: none;
+    outline: none;
+}
+.navbar .nav select option{
+    color: red;
+}
+.navbar .icons i{
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 7px rgb(197, 142, 142));
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+}
+.hero_section{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.hero_section .headphone_1{
+    background-color: rgba(74, 176, 190, 0.897);
+    max-width: 15vw;
+    max-height: 10vw;
+}
+.hero_section .headphone_1 img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    transform: rotate(20deg);
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/header.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.features .feature1, .feature2, .feature3{
+    width: 22vw;
+    height: 27vh;
+    border: 1px solid red;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.features .feature1 i, .feature2 i, .feature3 i{
+    font-size: 3rem;
+    color: red;
+}
+.features .feature1 p, .feature2 p, .feature3 p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.promotion{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.promotion .pro_content{
+    width: 30vw;
+}
+.promotion .pro_content h1{
+    font-style: 2.5rem;
+    font-weight: 700;
+}
+.promotion .pro_img{
+    background-image: url("images/person_hp.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 35vw;
+    height: 50vh;
+}
+.promotion2 .pro_img{
+    background-image: url("images/person-2_hp.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 35vw;
+    height: 50vh;
+}
