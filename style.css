@@ -2,16 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "lato";
+    font-family: "lato";  
     color: black;
 }
+
+    /* This is navbar */
+
 .navbar{
-    height: 10vh;
-    width: 100vw;
-    background-color: rgb(255, 255, 255);
+    height: 12vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5rem;
+}
+.navbar .logo img{
+    width: 6rem;
 }
 .navbar .nav{
     display: flex;
@@ -20,6 +25,8 @@
 }
 .navbar .nav li{
     list-style-type: none;
+    font-size: 1rem;
+    font-weight: 500;
     padding: 0 1rem;
 }
 .navbar .nav li a{
@@ -31,49 +38,40 @@
 }
 .navbar .nav select option{
     color: red;
+    font-size: 1rem;
+    font-weight: 500;
 }
-.navbar .icons i{
+.navbar .icons img{
     background-color: white;
     border-radius: 50%;
-    filter: drop-shadow(1px 1px 7px rgb(197, 142, 142));
-    padding: 0.3rem;
+    filter: drop-shadow(1px 1px 14px rgb(189, 170, 170));
+    width: 2rem;
+    padding: 0.4rem;
     margin: 0 0.5rem;
 }
-.hero_section{
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    position: relative;
-}
-.hero_section .headphone_1{
-    background-color: rgba(74, 176, 190, 0.897);
-    max-width: 15vw;
-    max-height: 10vw;
-}
-.hero_section .headphone_1 img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin-top: 1rem;
-    transform: rotate(20deg);
-}
+
+    /* This is Header */
 
 .header{
-    width: 100vw;
     height: 100vh;
+    max-width: 100vw;
     background-image: url("images/header.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0 0;
 }
+
+   /*  This is Features Section */
 
 .features{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
     height: 40vh;
+    padding: 0 5rem;
 }
-
 .features .feature1, .feature2, .feature3{
     width: 22vw;
     height: 27vh;
@@ -83,34 +81,54 @@
     justify-content: space-around;
     align-items: center;
 }
+.features .feature1{
+    background-color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 6px rgb(189, 170, 170);
+    border: none;
+}
 .features .feature1 i, .feature2 i, .feature3 i{
     font-size: 3rem;
     color: red;
 }
 .features .feature1 p, .feature2 p, .feature3 p{
     font-size: 1.3rem;
-    font-weight: 400;
-}
-.promotion{
-    height: 80vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.promotion .pro_content{
-    width: 30vw;
-}
-.promotion .pro_content h1{
-    font-style: 2.5rem;
     font-weight: 700;
 }
-.promotion .pro_img{
+
+    /* This is Promotion Section */
+
+.promotion1, .promotion2{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 6rem;
+    align-items: center;
+}
+.promotion1 .pro_content h1{
+    font-style: 2.5rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.promotion1 .pro_content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.promotion1 .pro_img{
     background-image: url("images/person_hp.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 35vw;
     height: 50vh;
+}
+.promotion2 .pro_content h1{
+    font-style: 2.5rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.promotion2 .pro_content p{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .promotion2 .pro_img{
     background-image: url("images/person-2_hp.jpeg");
@@ -119,4 +137,278 @@
     background-size: cover;
     width: 35vw;
     height: 50vh;
+}
+.promotion2{
+    background-color: rgb(255, 246, 235);
+    margin: 0 6rem 6rem 6rem;
+}
+
+    /* This is Cards Section */
+
+.cards{
+    height: 80vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    padding: 0 6rem;  
+}
+.cards .card_heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.cards .card_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+.cards .card_section .card1 .bg{
+    height: 35vh;
+    width: 22vw;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: relative;
+    z-index: -1;
+}
+.cards .card_section .card1 .bg img{
+    width: 20rem;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    top: -5rem;  
+    z-index: 900;
+}
+.cards .card_section .card2 .bg{
+    height: 35vh;
+    width: 22vw;
+    background-color: rgba(184, 177, 158, 0.692);
+    position: relative;
+    z-index: -1;
+}
+.cards .card_section .card2 .bg img{
+    width: 20rem;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    top: -5rem;
+    z-index: 900;
+}
+.cards .card_section .card3 .bg{
+    height: 35vh;
+    width: 22vw;
+    background-color: rgba(99, 167, 199, 0.384);
+    position: relative;
+    content: "";
+    z-index: -1;   
+}
+.cards .card_section .card3 .bg img{
+    width: 20rem;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    top: -5rem;  
+    z-index: 900;
+}
+.cards .card_section .product_name{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.8rem 0;
+}
+.cards .card_section .product_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards .card_section .product_info .price{
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.cards .card_section .product_info .inputs .colors{
+    outline: none;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+}
+
+    /* This is New_arrival Section */
+
+.new_arrival{
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+    position: relative;
+}
+.new_arrival .arrival_text{
+    padding-top: 10rem;
+}
+.new_arrival .arrival_text p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.new_arrival .arrival_image{
+    background-image: url("images/new_arrival.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 60rem;
+    width: 100rem;
+    margin: 0 4rem;
+}
+.new_arrival::after{
+    content: "headband";
+    font-size: 14rem;
+    font-weight: 1000;
+    color: rgba(196, 196, 196, 0.37);
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    z-index: -1;
+}
+
+    /* This is arrival Features */
+
+.arrival_features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6rem;
+    gap: 4rem;
+}
+.arrival_features .arrival_feature h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.arrival_features .arrival_feature  p{
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+    /* This is Customer Section */
+
+.customer_section{
+    height: 100vh;
+    max-width: 100vw;
+    padding: 2rem 6rem;
+}
+.customer_section .custmer_heading{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 0 3rem 0;
+}
+.customer_section .customer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.customer_section .customer_content .customer_image{
+    background-image: url("images/customer.JPG");
+    height: 35rem;
+    width: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.customer_section .customer_content .newsletter .newsletter_image{
+    background-image: url("images/hp2.jpeg");
+    height: 25rem;
+    width: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    transform: rotate(20deg);
+}
+.customer_section .customer_content .newsletter::after{
+    content: "#1 Earwear Brand";
+    font-size: 4rem;
+    font-weight: 800;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+}
+.customer_section .customer_content .newsletter{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.customer_section .customer_content .newsletter_text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+.customer_section .customer_content .news{
+    border: 1px solid red;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem 6rem 0.5rem 1rem;
+}
+.customer_section .customer_content .search{
+    display: flex;
+}
+.customer_section .customer_content .search .button{
+    background: black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.6rem 2rem;
+}
+
+   /*  This is tag */
+
+#tag{
+    text-align: center;
+    padding: 6rem 15rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+    /* This is footer Section */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer ul{
+    list-style-type: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.footer h4{
+    font-size: 1.2rem;
+}
+.footer ul li{
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer .socials{
+    padding-right: 3rem;
+}
+.footer .foot_logo img{
+    height: 7rem;
+    margin: 3rem 0;
+}
+.footer .google_icons img{
+    border-radius: 0.5rem;
+    padding-right: 0.4rem;
+}
+
+    /* This is Footer Copy */
+
+.foot_copy{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    margin: 5rem 0;
+}
+.foot_copy .transport_icons img{
+    width: 3rem;
+    padding: 0 0.5rem;
+}
+.foot_copy .copy_text{
+    font-size: 0.9rem;
 }
